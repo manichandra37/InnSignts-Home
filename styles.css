@@ -2761,3 +2761,300 @@ html {
         transform: scale(1);
     }
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Container */
+    .container {
+        padding: 0 1rem;
+    }
+    
+    /* Navigation */
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .nav-center {
+        display: none;
+    }
+    
+    .nav-right {
+        gap: 0.5rem;
+    }
+    
+    .nav-cta, .nav-cta-secondary {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+        padding: 80px 0 60px;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+        padding: 14px 24px;
+    }
+    
+    /* Services Section */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .service-card {
+        margin-bottom: 1rem;
+    }
+    
+    /* Feature Sections */
+    .feature-section {
+        padding: 60px 0;
+    }
+    
+    .feature-content {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .feature-title {
+        font-size: 2rem;
+    }
+    
+    .feature-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .feature-visual {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+    
+    /* Pricing Dashboard */
+    .pricing-dashboard {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    /* Matrix Grid */
+    .matrix-grid {
+        max-width: 100%;
+    }
+    
+    .matrix-cells {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    
+    .cell {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+    
+    /* Inventory Dashboard */
+    .inventory-dashboard {
+        max-width: 100%;
+    }
+    
+    .item {
+        padding: 1rem;
+    }
+    
+    .item-icon {
+        font-size: 1.5rem;
+    }
+    
+    /* Why Choose Section */
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .why-choose-card {
+        padding: 1.5rem;
+    }
+    
+    /* Partners Section */
+    .partners-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .partner-logo {
+        padding: 1.5rem;
+        min-height: 150px;
+    }
+    
+    .partner-logo-img {
+        width: 140px;
+        height: 70px;
+    }
+    
+    /* FAQ Section */
+    .faq-grid {
+        max-width: 100%;
+    }
+    
+    .faq-question {
+        padding: 1rem;
+    }
+    
+    .faq-question h4 {
+        font-size: 1rem;
+    }
+    
+    /* Contact Section */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    /* Chatbot */
+    .chatbot-window {
+        width: 90vw;
+        height: 70vh;
+        right: 5vw;
+        bottom: 80px;
+    }
+    
+    .chat-messages {
+        height: calc(70vh - 120px);
+    }
+    
+    /* Section Headers */
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .section-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    .section-header p {
+        font-size: 1rem;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .feature-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .partner-logo-img {
+        width: 120px;
+        height: 60px;
+    }
+    
+    .cell {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+    
+    .item {
+        padding: 0.8rem;
+    }
+    
+    .why-choose-card {
+        padding: 1rem;
+    }
+    
+    .faq-question {
+        padding: 0.8rem;
+    }
+    
+    .contact-form {
+        padding: 1rem;
+    }
+    
+    .chatbot-window {
+        width: 95vw;
+        height: 60vh;
+        right: 2.5vw;
+    }
+}
+
+/* Tablet Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .why-choose-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .feature-title {
+        font-size: 2.5rem;
+    }
+}

@@ -3,125 +3,477 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InnSights - Revolutionary Hotel Management</title>
+    <title>InnSights - Hotel Management Solutions</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                InnSights
+            <div class="nav-left">
+                <a href="#" class="nav-logo">InnSights</a>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#features" class="nav-link">Features</a></li>
-                <li><a href="#pricing" class="nav-link">Pricing</a></li>
-                <li><a href="#technology" class="nav-link">Technology</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+            <div class="nav-center">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#experiences" class="nav-link">Experiences</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+            <a href="#contact" class="nav-cta">Contact Sales</a>
+            <a href="https://duplicate-main-innsi-570t.bolt.host/matrix" class="nav-cta-secondary" target="_blank">Get Started</a>
+        </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">InnSights</h1>
-            <p class="hero-subtitle">Revolutionary Hotel Management</p>
-            <p class="hero-description">Transform your hotel operations with AI-powered insights, dynamic pricing, seamless staff management, and smarter inventory control.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Hotel Lobby" class="hero-bg-image">
+            <div class="hero-overlay"></div>
         </div>
-        <div class="hero-image">
-            <div class="hotel-animation">
-                <div class="hotel-building">
-                    <div class="hotel-tower"></div>
-                    <div class="hotel-tower"></div>
-                    <div class="hotel-tower"></div>
-                    <div class="hotel-base"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hotel Price Intelligence & Management Platform</h1>
+                <p class="hero-subtitle">Compare your prices with competitors, manage inventory, schedule staff, and track local events - all in one powerful platform designed specifically for hotel owners.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Discover More</a>
+                    <a href="#services" class="btn-secondary">Our Services</a>
                 </div>
-                <div class="floating-elements">
-                    <div class="floating-icon">💰</div>
-                    <div class="floating-icon">📊</div>
-                    <div class="floating-icon">👥</div>
-                    <div class="floating-icon">🔔</div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-indicator"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Core Features</h2>
+                <h3>Everything Hotel Owners Need</h3>
+                <p>Our platform provides the essential tools every hotel owner needs to stay competitive and manage operations efficiently</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2066&q=80" alt="Single Day Price Fetching" class="service-bg-image">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h4>Single Day Price Fetching</h4>
+                        <p>Get real-time pricing data for any specific date. Compare your rates with competitors instantly and make informed pricing decisions.</p>
+                        <a href="#contact" class="service-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Multiple Days Price Fetching" class="service-bg-image">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h4>Multiple Days Price Fetching</h4>
+                        <p>Analyze pricing trends across multiple dates with our matrix system. Get comprehensive insights into market patterns and competitor strategies.</p>
+                        <a href="#contact" class="service-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Inventory Management" class="service-bg-image">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h4>Inventory Management</h4>
+                        <p>Track all your hotel supplies, manage purchase receipts, and never run out of essential items with automated alerts.</p>
+                        <a href="#contact" class="service-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Staff Scheduling" class="service-bg-image">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h4>Staff Scheduling</h4>
+                        <p>Create and manage staff schedules efficiently, track availability, and ensure optimal coverage for your hotel operations.</p>
+                        <a href="#contact" class="service-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80" alt="Events Notifications" class="service-bg-image">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h4>Events Notifications</h4>
+                        <p>Stay informed about local events that impact your hotel's demand. Get real-time notifications and adjust your pricing strategy accordingly.</p>
+                        <a href="#contact" class="service-link">Learn More</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Many More Features" class="service-bg-image">
+                        <div class="service-overlay"></div>
+                    </div>
+                    <div class="service-content">
+                        <h4>Many More*</h4>
+                        <p>Discover additional powerful features designed to streamline your hotel operations and boost your business efficiency.</p>
+                        <a href="#contact" class="service-link">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">Everything You Need</h2>
-            <p class="section-subtitle">Complete hotel management solution in one platform</p>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3>Smart Pricing</h3>
-                    <p>Stay ahead with AI-driven pricing that adapts to demand, offering real-time single-day and multi-day competitor hotel rates in one view.</p>
-                    <a href="#contact" class="feature-link">Learn More</a>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Multi Day Price</h3>
-                    <p>Compare hotel prices for specific dates with instant competitor analysis and market trend insights for optimal pricing decisions.</p>
-                    <a href="#contact" class="feature-link">Learn More</a>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📦</div>
-                    <h3>Inventory Management</h3>
-                    <p>Automated stock tracking with smart alerts and receipt processing for seamless operations.</p>
-                    <a href="#contact" class="feature-link">Learn More</a>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👥</div>
-                    <h3>Staff Scheduling</h3>
-                    <p>Intelligent shift management with automated scheduling based on demand and availability.</p>
-                    <a href="#contact" class="feature-link">Learn More</a>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔔</div>
-                    <h3>Event Intelligence</h3>
-                    <p>Track local events that impact occupancy and adjust pricing strategies accordingly</p>
-                    <a href="#contact" class="feature-link">Learn More</a>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">✨</div>
-                    <h3>Many More</h3>
-                    <a href="#contact" class="feature-link">Learn More</a>
-                </div>
-            </div>
+    <!-- Single Day Price Fetching Section -->
+    <section id="single-day-pricing" class="feature-section">
+        <div class="feature-bg">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2066&q=80" alt="Single Day Price Fetching Background" class="feature-bg-image">
+            <div class="feature-bg-overlay"></div>
         </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
         <div class="container">
-            <h2 class="section-title">Dynamic Pricing Engine</h2>
-            <p class="section-subtitle">Maximize revenue with intelligent pricing strategies</p>
-            
-            <div class="pricing-showcase">
-                <div class="pricing-content">
-                    <h3>Single Day & Matrix Pricing</h3>
-                    <p>Compare hotel prices across multiple dates and properties with our advanced matrix system. Get real-time insights into market trends and competitor pricing.</p>
-                    <ul class="pricing-features">
-                        <li>Real-time market analysis</li>
-                        <li>Competitor price tracking</li>
-                        <li>Demand forecasting</li>
-                        <li>Automated price optimization*</li>
-                    </ul>
-                    <a href="#contact" class="pricing-link">Explore Pricing</a>
+            <div class="feature-content">
+                <div class="feature-text">
+                    <h2 class="section-title">Single Day Price Fetching</h2>
+                    <p class="section-subtitle">Real-time pricing intelligence for any specific date</p>
+                    <div class="feature-description">
+                        <p>Get instant access to pricing data for any specific date. Compare your rates with competitors in real-time and make informed pricing decisions that maximize your revenue potential.</p>
+                        <ul class="feature-list">
+                            <li>Real-time competitor price monitoring</li>
+                            <li>Instant price comparison dashboard</li>
+                            <li>Historical pricing data analysis</li>
+                            <li>Automated price recommendations</li>
+                        </ul>
+                        <a href="#contact" class="feature-cta">Explore Single Day Price Fetching</a>
+                    </div>
                 </div>
-                <div class="pricing-visual">
-                    <div class="price-chart">
-                        <div class="chart-line"></div>
-                        <div class="chart-points">
-                            <div class="point"></div>
-                            <div class="point"></div>
-                            <div class="point"></div>
-                            <div class="point"></div>
+                <div class="feature-visual">
+                    <div class="pricing-dashboard">
+                        <div class="dashboard-header">
+                            <div class="price-chart">
+                                <div class="chart-line"></div>
+                                <div class="chart-points">
+                                    <div class="point"></div>
+                                    <div class="point"></div>
+                                    <div class="point"></div>
+                                    <div class="point"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">Live</span>
+                                <span class="stat-label">Price Updates</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Monitoring</span>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multiple Days Price Fetching Section -->
+    <section id="multi-day-pricing" class="feature-section">
+        <div class="feature-bg">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Multiple Days Price Fetching Background" class="feature-bg-image">
+            <div class="feature-bg-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="feature-content reverse">
+                <div class="feature-visual">
+                    <div class="matrix-grid">
+                        <div class="matrix-header">
+                            <div class="date-range">Jan 15 - Jan 30</div>
+                        </div>
+                        <div class="matrix-cells">
+                            <div class="cell high">$299</div>
+                            <div class="cell medium">$249</div>
+                            <div class="cell low">$199</div>
+                            <div class="cell peak">$399</div>
+                        </div>
+                        <div class="matrix-legend">
+                            <span class="legend-item">Peak</span>
+                            <span class="legend-item">High</span>
+                            <span class="legend-item">Medium</span>
+                            <span class="legend-item">Low</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-text">
+                    <h2 class="section-title">Multiple Days Price Fetching</h2>
+                    <p class="section-subtitle">Comprehensive pricing analysis across multiple dates</p>
+                    <div class="feature-description">
+                        <p>Analyze pricing trends across multiple dates with our advanced matrix system. Get comprehensive insights into market patterns, competitor strategies, and optimal pricing opportunities.</p>
+                        <ul class="feature-list">
+                            <li>Multi-date price matrix analysis</li>
+                            <li>Competitor pricing trend tracking</li>
+                            <li>Market demand pattern identification</li>
+                            <li>Strategic pricing recommendations</li>
+                        </ul>
+                        <a href="#contact" class="feature-cta">Explore Matrix</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Management Section -->
+    <section id="inventory-management" class="feature-section">
+        <div class="feature-bg">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Inventory Management Background" class="feature-bg-image">
+            <div class="feature-bg-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="feature-content">
+                <div class="feature-text">
+                    <h2 class="section-title">Inventory Management</h2>
+                    <p class="section-subtitle">Complete supply chain management for your hotel</p>
+                    <div class="feature-description">
+                        <p>Streamline your inventory operations with automated tracking, smart alerts, and digital receipt management. Never run out of essential supplies and maintain optimal stock levels for smooth hotel operations.</p>
+                        <ul class="feature-list">
+                            <li>Real-time stock level monitoring</li>
+                            <li>Automated low stock alerts</li>
+                            <li>Digital receipt management</li>
+                            <li>Cost tracking and analysis</li>
+                        </ul>
+                        <a href="#contact" class="feature-cta">Manage Inventory</a>
+                    </div>
+                </div>
+                <div class="feature-visual">
+                    <div class="inventory-dashboard">
+                        <div class="inventory-items">
+                            <div class="item">
+                                <div class="item-icon">🛏️</div>
+                                <div class="item-info">
+                                    <span class="item-name">Bed Linens</span>
+                                    <span class="item-stock">45 units</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-icon">🧴</div>
+                                <div class="item-info">
+                                    <span class="item-name">Toiletries</span>
+                                    <span class="item-stock low">12 units</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-icon">☕</div>
+                                <div class="item-info">
+                                    <span class="item-name">Coffee Supplies</span>
+                                    <span class="item-stock">78 units</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Scheduling Section -->
+    <section id="staff-scheduling" class="feature-section">
+        <div class="feature-bg">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Staff Scheduling Background" class="feature-bg-image">
+            <div class="feature-bg-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="feature-content reverse">
+                <div class="feature-visual">
+                    <div class="schedule-calendar">
+                        <div class="calendar-header">
+                            <span class="month">January 2024</span>
+                        </div>
+                        <div class="calendar-grid">
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                            <div class="day-header">Sun</div>
+                            <div class="day scheduled">15</div>
+                            <div class="day scheduled">16</div>
+                            <div class="day">17</div>
+                            <div class="day scheduled">18</div>
+                            <div class="day scheduled">19</div>
+                            <div class="day peak">20</div>
+                            <div class="day peak">21</div>
+                        </div>
+                        <div class="schedule-legend">
+                            <span class="legend-item">Scheduled</span>
+                            <span class="legend-item">Peak</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-text">
+                    <h2 class="section-title">Staff Scheduling</h2>
+                    <p class="section-subtitle">Efficient workforce management for optimal operations</p>
+                    <div class="feature-description">
+                        <p>Create and manage staff schedules efficiently with our intuitive scheduling system. Track availability, assign shifts, and ensure optimal coverage for your hotel operations.</p>
+                        <ul class="feature-list">
+                            <li>Drag-and-drop schedule creation</li>
+                            <li>Staff availability tracking</li>
+                            <li>Shift assignment and management</li>
+                            <li>Optimal coverage optimization</li>
+                        </ul>
+                        <a href="#contact" class="feature-cta">Schedule Staff</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Notifications Section -->
+    <section id="event-intelligence" class="feature-section">
+        <div class="feature-bg">
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80" alt="Events Notifications Background" class="feature-bg-image">
+            <div class="feature-bg-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="feature-content">
+                <div class="feature-text">
+                    <h2 class="section-title">Events Notifications</h2>
+                    <p class="section-subtitle">Stay ahead of market opportunities with local event tracking</p>
+                    <div class="feature-description">
+                        <p>Get real-time notifications about local events that impact your hotel's demand. Track festivals, conferences, concerts, and other activities to adjust your pricing strategy accordingly.</p>
+                        <ul class="feature-list">
+                            <li>Real-time event notifications</li>
+                            <li>Local event impact analysis</li>
+                            <li>Demand forecasting alerts</li>
+                            <li>Strategic pricing recommendations</li>
+                        </ul>
+                        <a href="#contact" class="feature-cta">Track Events</a>
+                    </div>
+                </div>
+                <div class="feature-visual">
+                    <div class="events-dashboard">
+                        <div class="event-card high">
+                            <div class="event-header">
+                                <span class="event-type">Concert</span>
+                                <span class="event-impact">High Impact</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Music Festival</h4>
+                                <p>Jan 25, 2024 • Downtown Arena</p>
+                                <span class="attendance">50,000+ attendees</span>
+                            </div>
+                        </div>
+                        <div class="event-card medium">
+                            <div class="event-header">
+                                <span class="event-type">Conference</span>
+                                <span class="event-impact">Medium Impact</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Tech Summit</h4>
+                                <p>Jan 28, 2024 • Convention Center</p>
+                                <span class="attendance">5,000 attendees</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Why Choose InnSights Section -->
+    <section id="why-choose" class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose InnSights</h2>
+                <h3>Built for Modern Hospitality</h3>
+                <p>Experience the future of hotel management with our comprehensive platform designed for speed, efficiency, and growth.</p>
+            </div>
+            <div class="why-choose-grid">
+                <div class="why-choose-card">
+                    <div class="card-icon">⚡</div>
+                    <h4>Built for Speed and Ease of Use</h4>
+                    <p>Intuitive interface designed for quick adoption. Get your team up and running in minutes, not days.</p>
+                </div>
+                <div class="why-choose-card">
+                    <div class="card-icon">🤖</div>
+                    <h4>Automations That Keep You Laser-Focused</h4>
+                    <p>Automate routine tasks so you can focus on what matters most - growing your business and serving guests.</p>
+                </div>
+                <div class="why-choose-card">
+                    <div class="card-icon">🔗</div>
+                    <h4>Seamless Integrations</h4>
+                    <p>Integrated with most popular and your favorite patner, Booking.com in fetching prices.</p>
+                </div>
+                <div class="why-choose-card">
+                    <div class="card-icon">📊</div>
+                    <h4>All-in-One Solution</h4>
+                    <p>From room rates to scheduling, everything you need to manage your hotel is in one place.</p>
+                </div>
+                <div class="why-choose-card">
+                    <div class="card-icon">🔒</div>
+                    <h4>Secure and Private</h4>
+                    <p>All your data is well secured and private.</p>
+                </div>
+                <div class="why-choose-card">
+                    <div class="card-icon">✨</div>
+                    <h4>Many more*</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Partners Section -->
+    <section id="partners" class="partners">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trusted by Leading Hotels</h2>
+                <h3>Powering Hotel Operations</h3>
+                <p>Join thousands of hotels worldwide who trust InnSights to manage their operations.</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="images/Wyndham-logo.jpg" alt="Wyndham Hotels & Resorts" class="partner-logo-img">
+                    <span class="partner-name">Wyndham</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="images/choice-logo.jpg" alt="Choice Hotels International" class="partner-logo-img">
+                    <span class="partner-name">Choice</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="images/ihg-logo.png" alt="IHG Hotels & Resorts" class="partner-logo-img">
+                    <span class="partner-name">IHG</span>
+                </div>
+                <div class="partner-logo">
+                    <img src="images/best-western-logo.jpg" alt="Best Western Hotels & Resorts" class="partner-logo-img">
+                    <span class="partner-name">Best Western</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                                    <h2>Our Story</h2>
+                <h3>Built for Hotel Success</h3>
+                <p>At InnSights, we believe that great hotel management is about efficiency, profitability, and guest satisfaction. Our journey began with a simple vision: to transform hotel operations through smart technology and practical solutions.</p>
+                <p>We understand that every hotel is unique, with its own challenges and opportunities. That's why we've built our platform to be flexible and scalable, combining powerful technology with practical hotel management principles.</p>
+                <p>From boutique hotels to large chains, we partner with hoteliers who want to streamline operations and boost revenue. Together, we create solutions that drive results and improve guest experiences.</p>
+                <a href="#contact" class="btn-primary">Learn More</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Hotel Interior" class="about-bg-image">
+                    <div class="image-overlay"></div>
                 </div>
             </div>
         </div>
@@ -164,25 +516,188 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <h3>Trusted by Hotels. Powered by Results.</h3>
+                <p>We don't just promise improvements, we deliver them. Hear from hoteliers who've partnered with InnSights to transform their operations, efficiency, and revenue.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Our hotel needed a management system overhaul, and InnSights delivered. Staff efficiency is up, and our revenue has never been better."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Liam Foster</h4>
+                            <span>Director, BlueBay Hotels, Melbourne</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a growing hotel chain, we needed more than just software — we needed operational efficiency. InnSights' AI-driven solutions gave us exactly that."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Rachel Abrams</h4>
+                            <span>Founder, ElevateTech Solutions, New York City</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"With InnSights, we expanded our hotel operations across multiple locations without losing our service quality. Their team is professional, responsive, and truly understands hotel management."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Julien Moreau</h4>
+                            <span>Head of Operations, Atelier Lumière, Paris</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <h3>Everything You Need to Know</h3>
+                <p>Get answers to the most common questions about InnSights hotel management platform.</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How does the competitor price tracking work?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our platform automatically fetches and displays your competitors' prices in real-time, allowing you to compare rates across multiple dates and make informed pricing decisions to stay competitive.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can I track prices for multiple dates at once?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our matrix pricing feature allows you to view and compare hotel prices across multiple dates simultaneously, giving you a comprehensive view of market trends and competitor strategies.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How does the inventory management work?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our inventory system tracks all your hotel supplies in real-time, manages purchase receipts digitally, and sends automated alerts when items are running low, ensuring you never run out of essential supplies.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What events can I track with the platform?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our event intelligence feature tracks local festivals, conferences, concerts, sports events, and other activities that could impact hotel demand in your area, helping you adjust pricing strategies accordingly.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How does staff scheduling work?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our staff scheduling tool allows you to create and manage employee schedules, track availability, assign shifts, and ensure optimal coverage for your hotel operations with an intuitive drag-and-drop interface.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Is there a mobile app available?</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>no not yet, but our platform is fully responsive and works seamlessly on mobile devices, tablets, and desktops, allowing you to manage your hotel operations from anywhere, anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="cta-background">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Luxury Hotel Exterior" class="cta-bg-image">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Transform Your Hotel Operations</h2>
+                <p>Join thousands of hotels that have streamlined their operations with InnSights.<br>Where innovation meets practicality, and every feature drives results.</p>
+                <a href="#contact" class="btn-primary">Begin Your Journey</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Ready to Transform?</h2>
-            <p class="contact-subtitle">Join the future of hotel management</p>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <h3>Ready to transform your hotel operations?</h3>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h4>for questions</h4>
+                    <a href="mailto:info@innsights.com" class="contact-link">Contact Us</a>
                 </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
-                </div>
-                <button type="submit" class="submit-button">Get Started</button>
-            </form>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Name (Required)" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email (Required)" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Tell us about your hotel management needs" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit</button>
+                </form>
+            </div>
         </div>
     </section>
+
+    <!-- Chatbot -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-toggle" id="chatbotToggle">
+            <span class="chat-icon">💬</span>
+        </div>
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chat-header">
+                <h4>InnSights Assistant</h4>
+                <button class="chat-close" id="chatClose">×</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <p>Hello! I'm here to help you learn more about InnSights. How can I assist you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button id="chatSend">Send</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

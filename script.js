@@ -1,3 +1,44 @@
+// Force scroll to top on page load and refresh
+(function() {
+    // Immediate scroll to top
+    window.scrollTo(0, 0);
+    
+    // Remove hash from URL immediately
+    if (window.location.hash) {
+        history.replaceState(null, null, window.location.pathname);
+    }
+    
+    // Multiple event handlers for maximum compatibility
+    window.addEventListener('load', function() {
+        window.scrollTo(0, 0);
+        if (window.location.hash) {
+            history.replaceState(null, null, window.location.pathname);
+        }
+    });
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        window.scrollTo(0, 0);
+        if (window.location.hash) {
+            history.replaceState(null, null, window.location.pathname);
+        }
+    });
+    
+    // Force scroll after a short delay
+    setTimeout(function() {
+        window.scrollTo(0, 0);
+    }, 100);
+    
+    // Force scroll after images load
+    setTimeout(function() {
+        window.scrollTo(0, 0);
+    }, 500);
+    
+    // Force scroll after everything loads
+    setTimeout(function() {
+        window.scrollTo(0, 0);
+    }, 1000);
+})();
+
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
     // Get all navigation links
@@ -162,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe sections for animation
-    const sections = document.querySelectorAll('.features, .pricing, .technology, .contact');
+    const sections = document.querySelectorAll('.feature-section, .pricing, .technology, .contact');
     sections.forEach(section => {
         section.style.opacity = '0';
         section.style.transform = 'translateY(30px)';
@@ -289,5 +330,96 @@ document.addEventListener('DOMContentLoaded', function() {
         feature.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
         featureListObserver.observe(feature);
     });
+
+    // FAQ functionality
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const faqItem = question.parentElement;
+            const isActive = faqItem.classList.contains('active');
+            
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        });
+    });
+
+    // Chatbot functionality
+    const chatbotToggle = document.getElementById('chatbotToggle');
+    const chatbotWindow = document.getElementById('chatbotWindow');
+    const chatClose = document.getElementById('chatClose');
+    const chatInput = document.getElementById('chatInput');
+    const chatSend = document.getElementById('chatSend');
+    const chatMessages = document.getElementById('chatMessages');
+
+    if (chatbotToggle && chatbotWindow && chatClose && chatInput && chatSend && chatMessages) {
+        // Toggle chatbot window
+        chatbotToggle.addEventListener('click', () => {
+            chatbotWindow.classList.add('active');
+        });
+
+        chatClose.addEventListener('click', () => {
+            chatbotWindow.classList.remove('active');
+        });
+
+        // Send message function
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (message) {
+                // Add user message
+                addMessage(message, 'user');
+                chatInput.value = '';
+                
+                // Simulate bot response
+                setTimeout(() => {
+                    const botResponse = getBotResponse(message);
+                    addMessage(botResponse, 'bot');
+                }, 1000);
+            }
+        }
+
+        // Add message to chat
+        function addMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            messageDiv.innerHTML = `<p>${text}</p>`;
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Simple bot responses
+        function getBotResponse(message) {
+            const lowerMessage = message.toLowerCase();
+            
+            if (lowerMessage.includes('pricing') || lowerMessage.includes('cost')) {
+                return "Our pricing is flexible and based on your hotel size and needs. Would you like to schedule a consultation to discuss pricing options?";
+            } else if (lowerMessage.includes('integration') || lowerMessage.includes('booking.com')) {
+                return "Yes! InnSights integrates seamlessly with Booking.com, Expedia, and all major booking platforms. We handle the integration process for you.";
+            } else if (lowerMessage.includes('implementation') || lowerMessage.includes('setup')) {
+                return "Most hotels are up and running with InnSights within 2-3 weeks. Our team handles everything including data migration and staff training.";
+            } else if (lowerMessage.includes('support') || lowerMessage.includes('help')) {
+                return "We provide 24/7 customer support, dedicated account managers, and comprehensive training for your entire team.";
+            } else if (lowerMessage.includes('features') || lowerMessage.includes('what can')) {
+                return "InnSights offers smart pricing, inventory management, staff scheduling, event intelligence, and much more. Everything you need to manage your hotel is in one place.";
+            } else {
+                return "Thank you for your message! I'd be happy to help you learn more about InnSights. You can also contact our sales team for a personalized demo.";
+            }
+        }
+
+        // Send message on button click
+        chatSend.addEventListener('click', sendMessage);
+
+        // Send message on Enter key
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    }
 });
 
